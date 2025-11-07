@@ -11,9 +11,9 @@
 <body>
 
     <div class="container mt-5">
-        <h1 class="text-primary">Halo, Project UTS Saya!</h1>
-        <p>Halaman ini sekarang sudah menggunakan Bootstrap.</p>
-        <button class="btn btn-success">Ini Tombol Bootstrap</button>
+        <h1 class="text-primary">Halo, ini hasil edit project gifari!</h1>
+        <p>Halaman ini sekarang sudah menggunakan bootstrap.</p>
+        <button class="btn btn-success">ini tombol gifari</button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

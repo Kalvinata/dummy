@@ -7,9 +7,8 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
 
-            <!-- Card untuk detail post -->
             <div class="card shadow-lg border-0 mb-4">
-                <img src="{{ $post->image_url ?? asset('assets/images/epep.jpg') }}" 
+                <img src="{{ $post->image_url }}" 
                      class="card-img-top" 
                      alt="{{ $post->title }}"
                      style="max-height: 400px; object-fit: cover;">

@@ -4,6 +4,11 @@
 
 @section('content')
     <div class="container mt-5">
+        <!-- Foto Coding -->
+        <div class="mb-4">
+            <img src="{{ asset('asstes/images/download.png') }}" class="img-fluid rounded" alt="Coding Photo" style="max-width: 100%; height: auto;">
+        </div>
+        
         <div class="row">
             <!-- Card Profil 1: KHALIF FAUZAN FIRDAUS -->
             <div class="col-md-6 mb-4">

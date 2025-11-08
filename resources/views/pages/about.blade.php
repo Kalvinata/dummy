@@ -3,34 +3,42 @@
 @section('title', 'About')
 
 @section('content')
-    <div class="container mt-5">
-        <!-- Foto Coding -->
-        <div class="mb-4">
-            <img src="{{ asset('asstes/images/download.png') }}" class="img-fluid rounded" alt="Coding Photo" style="max-width: 100%; height: auto;">
+    <div class="row justify-content-center text-center">
+        <div class="col-12">
+            <h1 class="display-5 mb-4">Tim Kami</h1>
+            <p class="lead">Profile dua orang Keren.</p>
         </div>
-        
-        <div class="row">
-            <!-- Card Profil 1: KHALIF FAUZAN FIRDAUS -->
-            <div class="col-md-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h2 class="card-title">khalif fauzan firdauss</h2>
-                        <p class="card-text">ini projek saya 😎</p>
-                        <p class="text-muted">2301040033</p>
-                    </div>
-                </div>
-            </div>
+    </div>
 
-            <!-- Card Profil 2: Gifari alroofif -->
-            <div class="col-md-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h2 class="card-title">Gifari alroofif</h2>
-                        <p class="card-text">professional front end designer</p>
-                        <p class="text-muted">2301040007</p>
-                    </div>
+    <hr class="my-4">
+
+    <div class="row g-4 justify-content-center">
+        
+        <!-- Kartu 1: JulHadi -->
+        <div class="col-md-5">
+            <div class="card">
+                
+                <img src="/images/kalif.jpg" class="card-img-top" alt="Foto JulHadi" style="height: 300px; object-fit: cover; object-position: center;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">khalif fauzan firdauss</h5>
+                    <p class="card-text text-muted">Master</p>
+                    <p class="card-text"><small class="text-muted">2301040033</small></p>
                 </div>
             </div>
         </div>
+
+        <!-- Kartu 2: Gifari -->
+        <div class="col-md-5">
+            <div class="card">
+                
+                <img src="/images/gifari.jpg" class="card-img-top" alt="Foto Gifari" style="height: 300px; object-fit: cover; object-position: center;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Gifari alrooffif</h5>
+                    <p class="card-text text-muted">branch</p>
+                    <p class="card-text"><small class="text-muted">2301040007</small></p>
+                </div>
+            </div>
+        </div>
+
     </div>
 @endsection

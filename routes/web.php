@@ -1,30 +1,25 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\PostController; // <-- PASTIKAN INI ADA
 
-//route untuk halaman home (link "Home" di navbar mengarah ke "/")
-Route::get('/', function () {
-    // TODO: Backend akan mengirimkan variabel $posts
-    $posts = []; // Placeholder - akan diganti dengan data dari backend
-    return view('pages.home', compact('posts'));
-});
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+*/
 
-//route untuk halaman home (alternatif path)
-Route::get('/home', function () {
-    // TODO: Backend akan mengirimkan variabel $posts
-    $posts = []; // Placeholder - akan diganti dengan data dari backend
-    return view('pages.home', compact('posts'));
-});
+// === RUTE PROJECT UTS (SOAL 1) ===
 
-//route baru untuk halaman about
+// Rute Home (Beranda) -> Memanggil PostController
+Route::get('/', [PostController::class, 'home']);
+
+// Rute Halaman Detail Post -> Memanggil PostController
+Route::get('/post/{id}', [PostController::class, 'show']);
+
+// Rute Halaman About (Statis)
 Route::get('/about', function () {
-    return view('pages.about');
-});
-
-//route untuk halaman post detail
-Route::get('/post/{id}', function ($id) {
-    // TODO: Backend akan mengirimkan variabel $post berdasarkan $id
-    $post = null; // Placeholder - akan diganti dengan data dari backend
-    return view('pages.post', compact('post'));
+    return view('pages.about'); 
 });
 

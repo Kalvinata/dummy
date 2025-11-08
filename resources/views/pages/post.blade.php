@@ -3,15 +3,26 @@
 @section('title', $post->title)
 
 @section('content')
-    <div class="container mt-5">
-        <h1>{{ $post->title }}</h1>
-        <p>{{ $post->content }}</p>
-        
-        <!-- Foto Coding -->
-        <div class="mt-4 mb-4">
-            <img src="{{ asset('asstes/images/epep.jpg') }}" class="img-fluid rounded" alt="Coding Photo" style="max-width: 100%; height: auto;">
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+
+            <!-- Card untuk detail post -->
+            <div class="card shadow-lg border-0 mb-4">
+                <img src="{{ $post->image_url ?? asset('assets/images/epep.jpg') }}" 
+                     class="card-img-top" 
+                     alt="{{ $post->title }}"
+                     style="max-height: 400px; object-fit: cover;">
+
+                <div class="card-body">
+                    <h1 class="card-title">{{ $post->title }}</h1>
+                    <p class="card-text mt-3">{{ $post->content }}</p>
+
+                    <a href="/" class="btn btn-outline-primary mt-3">← Kembali ke Home</a>
+                </div>
+            </div>
+
         </div>
-        
-        <a href="/">← kembali</a>
     </div>
+</div>
 @endsection
